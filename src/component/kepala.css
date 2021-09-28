@@ -1,0 +1,24 @@
+.navvbar{
+    
+    height: 100px;
+    
+}
+.carikbrand{
+    font-size: 64px;
+    color: white;
+}
+.carikpos{
+    font-weight: bold;
+font-size: 54px;
+margin-left: 50px;
+margin-top: 30px;
+
+}
+.navhome{
+    position: absolute;
+width: 100%;
+height: 394px;
+
+
+background: #000000;
+}
