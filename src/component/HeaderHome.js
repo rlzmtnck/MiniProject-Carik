@@ -5,7 +5,7 @@ import './kepala.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 const HeaderHome = () => {
     return (
-        <div className="navhome daco">
+        <div className="navhome daco container-fluid">
             <div className="carikbrand carikpos">
                 CaRik
             </div>
@@ -13,7 +13,7 @@ const HeaderHome = () => {
                 <div className="tittle">Cari Lirikmu</div>
                 <div className="tittle1">Cari lirik  musik favoritmu dan jelajahi</div>
                 <div className="tittle1">tanpa batas tanpa biaya</div>
-                <a href="/page">
+                <a href="/main">
                     <button className="but">Get Started</button>
                 </a>
 

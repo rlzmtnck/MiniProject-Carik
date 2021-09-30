@@ -2,9 +2,8 @@
 .kontens {
     font-family: 'Roboto', sans-serif;
     position: absolute;
-    width: 306px;
-    height: 80px;
-    left: 620px;
+   
+    left: 115px;
     top: 410px;
     
    
@@ -18,4 +17,36 @@
     text-align: center;
     
     color: #000000;
+}
+.kartu{
+    position: absolute;
+width: 824px;
+height: 557px;
+left: 240px;
+top: 820px;
+
+background: rgba(255, 136, 0, 0.1);
+border-radius: 29px;
+}
+.formbro {
+    position: absolute;
+    width: 90%;
+    left: 40px;
+    top: 40px;
+}
+.btn-custom2 { 
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color:white !important;
+    width: 100px;
+    margin-top: 20px;
+    margin-left: 320px;
+    border-radius: 5px;
+    background-color: #FFBB33; 
+    border-color: #fd961f; 
+  } 
+.btn-custom2:hover {
+    
+  background-color: #f1b130; 
+  border-color: #ffa742; 
 }

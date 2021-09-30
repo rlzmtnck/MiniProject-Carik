@@ -11,8 +11,8 @@ const HeaderBiasa = () => {
     <a className="navbar-brand" style={{fontWeight: "bold", marginLeft:"30px", fontSize: "50px"}} href="#">CaRik</a>
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
     <ul className="navbar-nav ml-auto" style={{marginLeft: "1200px", marginTop: "1px"}}>
-      <li className="nav-item active">
-        <a className="nav-link" href="#">HOME</a>
+      <li className="nav-item">
+        <a className="nav-link" href="/">HOME</a>
       </li>
       <li className="nav-item">
         <a className="nav-link" href="#">ABOUT</a>

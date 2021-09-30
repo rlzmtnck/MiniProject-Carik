@@ -25,7 +25,7 @@ nav ul {
 
 
 nav ul li:hover a{
-     color:#FF8800;
+     color:#ffffff;
 }
 
 .logoo{
@@ -92,8 +92,12 @@ color: #FFFFFF;
     position: absolute;
     width: 200px;
     height: 56px;
-    left: 670px;
+    left: 663px;
     bottom: 60px;
+}
+.but:hover {
+    background-color: #d6770b; 
+  border-color: #ffa742; 
 }
 .konten{
     margin-top: -10px;
