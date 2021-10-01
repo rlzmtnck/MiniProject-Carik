@@ -31,7 +31,7 @@ const Lyrics = props => {
       })
       .catch(err => console.log(err));
   }, [props.match.params.id]);
-
+  
   if (
     track === undefined ||
     lyrics === undefined ||
@@ -40,6 +40,7 @@ const Lyrics = props => {
   ) {
     return <Spinner />;
   } else {
+    console.log(track.track.release_date);
     return (
       <>
         
@@ -67,12 +68,6 @@ const Lyrics = props => {
           <li className="list-group-item">
             <strong>Explicit Words</strong>:{" "}
             {track.track.explicit === 0 ? "No" : "Yes"}
-          </li>
-          <li className="list-group-item">
-            <strong>Release Date</strong>:{" "}
-            <Moment format="MM/DD/YYYY">
-              {track.track.first_release_date}
-            </Moment>
           </li>
         </ul>
         <Link to="/main" className="btn btn-custom1 btn-lg mt-3" style={{marginLeft: "700px"}}>

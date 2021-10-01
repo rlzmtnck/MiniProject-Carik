@@ -8,7 +8,7 @@ export const Context = React.createContext();
 export function ContextController({ children }) {
   let intialState = {
     track_list: [],
-    isLoading: false,
+  
     heading: ""
     
   };
@@ -24,7 +24,7 @@ export function ContextController({ children }) {
         // console.log(res.data);
         setState({
           track_list: res.data.message.body.track_list,
-          isLoading: true,
+          
           heading: "Paling Dicari"
         });
       })

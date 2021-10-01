@@ -17,7 +17,7 @@ const Search = () => {
       )
       .then(res => {
         let track_list = res.data.message.body.track_list;
-        setState({ track_list: track_list, heading: "Hasil Pencarian", isLoading: true });
+        setState({ track_list: track_list, heading: "Hasil Pencarian" });
       })
       .catch(err => console.log(err));
   }, [trackTitle]);

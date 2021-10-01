@@ -1,12 +1,55 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState, useEffect } from 'react';
 import HeaderBiasa from '../component/HeaderBiasa';
 import HeaderHome from '../component/HeaderHome';
+import useSubmitComment from '../hook/useSubmitComment';
+import useDeleteComment from '../hook/useDeleteComment';
+import useGetComment from '../hook/useGetComment';
 import { Context } from '../context';
 import TopTracks from '../component/tracks/TopTracks';
 import '../component/style.css'
 const Home = () => {
+    const initialData = {
+        nama: "",
+        message: ""
+        
+       
+    }
     const [state] = useContext(Context);
+    const [user, setUser] = useState(initialData);
+    const {submitComment, loadingSubmit} = useSubmitComment();
+    const {deleteComment, loadingDelete} = useDeleteComment();
+
+    const {data, error, SubscribeComment} = useGetComment()
+  useEffect(() => {
+    SubscribeComment();
+  }, []);
+  if(error) {
+    console.log(error)
+    return null
+  }
     const { track_list } = state;
+
+    // Handle
+    const handleInput = (e) => {
+        const name = e.target.name
+        const value = e.target.value;
+        setUser({
+          ...user,
+          [name]: value,
+        });
+    };
+    const onSubmitData =  (e) => {
+        e.preventDefault();
+         submitComment({variables: {
+          object: {
+            nama: user.nama,
+            message: user.message
+            
+          }
+        }})
+      
+      setUser(initialData)
+      };
     return (
         // <HeaderBiasa/
     <>     
@@ -34,18 +77,28 @@ const Home = () => {
                         Experience
                     </div>
                         <div className="kartu">
-                        <form className="formbro">
+                        <form className="formbro" onSubmit={onSubmitData}>
   <div className="form-group">
     <label for="nama">Nama</label>
-    <input type="text" className="form-control" id="nama"  placeholder="Masukkan Nama"/>
+    <input type="text" onChange={handleInput} className="form-control" id="nama" name="nama" value={user.nama} placeholder="Masukkan Nama"/>
   </div>
-  <div class="form-group">
+  <div className="form-group">
     <label for="exampleFormControlTextarea1">Pesan</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="12"></textarea>
+    <textarea className="form-control" onChange={handleInput} id="exampleFormControlTextarea1" name="message" value={user.message} rows="12"></textarea>
   </div>
   <button type="submit" className="btn btn-custom2">POST</button>
 </form>
-                        </div>           
+                        </div>
+                        {data?.Kampus_Merdeka_CommentList.map((show) => (
+                            <div className="card komenbro">
+                            <div className="body">
+                                <h5 className="card-title">{show.nama}</h5>
+                                <p className="card-text">{show.message}</p>
+                            </div>
+                        </div>
+
+                        ))}
+                        
                     </div>
             
     </>        
