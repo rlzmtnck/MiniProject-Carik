@@ -1,7 +1,7 @@
 import React, { useContext, useState, useEffect } from 'react';
 import HeaderBiasa from '../component/HeaderBiasa';
 import HeaderHome from '../component/HeaderHome';
-import ListKomen from './ListKoment';
+
 import useSubmitComment from '../hook/useSubmitComment';
 import useDeleteComment from '../hook/useDeleteComment';
 import useGetComment from '../hook/useGetComment';
