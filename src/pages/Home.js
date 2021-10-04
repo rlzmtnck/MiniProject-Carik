@@ -1,6 +1,7 @@
 import React, { useContext, useState, useEffect } from 'react';
 import HeaderBiasa from '../component/HeaderBiasa';
 import HeaderHome from '../component/HeaderHome';
+import ListKomen from './ListKoment';
 import useSubmitComment from '../hook/useSubmitComment';
 import useDeleteComment from '../hook/useDeleteComment';
 import useGetComment from '../hook/useGetComment';
@@ -50,12 +51,14 @@ const Home = () => {
       
       setUser(initialData)
       };
+      console.log(data)
     return (
         // <HeaderBiasa/
+        
     <>     
            
            <HeaderHome/>
-                <div className="kontens">
+                <div className="container kontens">
                     <div className="tittles">
                         Top
                     </div>
@@ -76,6 +79,7 @@ const Home = () => {
                     <div className="tittles">
                         Experience
                     </div>
+                    
                         <div className="kartu">
                         <form className="formbro" onSubmit={onSubmitData}>
   <div className="form-group">
@@ -89,7 +93,27 @@ const Home = () => {
   <button type="submit" className="btn btn-custom2">POST</button>
 </form>
                         </div>
-                        {data?.Kampus_Merdeka_CommentList.map((show) => (
+                        
+                       
+                          {data?.Kampus_Merdeka_CommentList.map((show) => (
+                            <li className='komen-list card-kontent'>
+                              
+                                  
+                                      <h5 className="card-title ml-4 mt-3">{show.nama}</h5>
+                                      <p style={{paddingRight: "10px"}}className="card-text ml-4 mt-3">{show.message}</p>
+                                      <p className="del">Delete</p>
+                              
+                          </li>
+                          
+
+                        ))}
+                        
+                        <div className="thanks">
+                           <p>Thanks For Coming</p>
+                           
+                        </div>
+                        
+                        {/* {data?.Kampus_Merdeka_CommentList.map((show) => (
                             <div className="card komenbro">
                             <div className="body">
                                 <h5 className="card-title">{show.nama}</h5>
@@ -97,11 +121,12 @@ const Home = () => {
                             </div>
                         </div>
 
-                        ))}
+                        ))} */}
                         
                     </div>
+                    
             
-    </>        
+      </>        
                 
            
         
