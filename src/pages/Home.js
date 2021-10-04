@@ -51,6 +51,13 @@ const Home = () => {
       
       setUser(initialData)
       };
+    const onDeleteItem =  (idx) => {
+
+       deleteComment({variables: {
+         id: idx
+       }})
+       
+     };
       console.log(data)
     return (
         // <HeaderBiasa/
@@ -96,13 +103,13 @@ const Home = () => {
                         
                        
                           {data?.Kampus_Merdeka_CommentList.map((show) => (
-                            <li className='komen-list card-kontent'>
+                            <li className='komen-list card-kontent mb-4'>
                               
-                                  
-                                      <h5 className="card-title ml-4 mt-3">{show.nama}</h5>
-                                      <p style={{paddingRight: "10px"}}className="card-text ml-4 mt-3">{show.message}</p>
-                                      <p className="del">Delete</p>
-                              
+                                  <div className="">
+                                      <h5 className="card-titles ml-4 mt-3">{show.nama}</h5>
+                                      <p style={{paddingRight: "15px", paddingLeft: "10px"}}className="card-text ml-4 mt-3">{show.message}</p>
+                                      <p onClick={onDeleteItem} className="del">Delete</p>
+                                  </div>
                           </li>
                           
 
