@@ -2,7 +2,8 @@ import React, { useContext, useEffect, useState } from "react";
 import { Context } from "../../context";
 import Spinner from "../Spinner";
 import Track from "./Track";
-
+import "./css/notfound.css"
+import Fade from 'react-reveal/Fade';
 const Tracks = () => {
   const [state] = useContext(Context);
   const [loading, setLoading] = useState(true);
@@ -30,7 +31,21 @@ const Tracks = () => {
         {
           (track_list === undefined || track_list.length === 0) ? (
             <>
-              <h1 className="text-center mb-4 mt-4">LIRIK TIDAK DITEMUKAN :(</h1>
+              <Fade bottom>
+                <div id="notfound1">
+                  <div class="notfound1">
+                    <div class="notfound-4041">
+                      <h1>
+                        4<span></span>4
+                      </h1>
+                    </div>
+                    <h2>Oops! Lyric not Found :(</h2>
+                    <p>
+                      Sorry but the lyric you are looking for does not exist.
+                    </p>
+                  </div>
+                </div>
+              </Fade>
             </>
           ) : (
             <>

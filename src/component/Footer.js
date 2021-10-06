@@ -16,17 +16,17 @@ const Footer = () => {
           <Column>
             <Heading>About Us</Heading>
 
-            <FooterLink href="#">Vision</FooterLink>
-            <FooterLink href="#">FAQs</FooterLink>
+            <FooterLink href="/visi">Vision</FooterLink>
+            <FooterLink href="/faq">FAQs</FooterLink>
           </Column>
           <Column>
             <Heading>Services</Heading>
-            <FooterLink href="#">API</FooterLink>
-            <FooterLink href="#">Pricing</FooterLink>
+            <FooterLink href="/api">API</FooterLink>
+            <FooterLink href="/pricing">Pricing</FooterLink>
           </Column>
           <Column>
             <Heading>Contact Us</Heading>
-            <FooterLink href="#">Teams</FooterLink>
+            <FooterLink href="/teams">Teams</FooterLink>
           </Column>
           <Column>
             <Heading>Social Media</Heading>
