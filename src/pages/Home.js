@@ -2,7 +2,6 @@ import React, { useContext, useState, useEffect } from "react";
 
 import HeaderHome from "../component/HeaderHome";
 import Slide from "react-reveal/Slide";
-import Pulse from "react-reveal/Pulse";
 
 import Footer from "../component/Footer";
 import useSubmitComment from "../hook/useSubmitComment";
