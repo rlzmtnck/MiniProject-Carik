@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+.kontens {
+  font-family: "Roboto", sans-serif;
+  position: absolute;
+
+  left: 115px;
+  top: 410px;
+}
+.tittles {
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 48px;
+  line-height: 56px;
+  text-align: center;
+
+  color: #000000;
+}
+.tittles1 {
+  font-style: normal;
+  margin-left: 30px;
+  font-weight: bolder;
+  font-size: 48px;
+  line-height: 56px;
+  text-align: center;
+
+  color: #000000;
+}
+.kartu {
+  position: absolute;
+  width: 824px;
+  height: 557px;
+  left: 256px;
+  top: 820px;
+
+  background: rgba(255, 136, 0, 0.1);
+  border-radius: 29px;
+}
+.formbro {
+  position: absolute;
+  width: 90%;
+  left: 40px;
+  top: 40px;
+}
+.vecbout {
+  background: url(../component/asset/girl.jpg);
+
+  background-size: 680px 300px;
+  background-repeat: no-repeat;
+  background-position: 700px 1px;
+  margin-left: 80px;
+}
+.btn-custom4 {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  color: white !important;
+  width: 100px;
+  margin-top: 8px;
+  margin-left: 320px;
+  border-radius: 5px;
+  background-color: #181818;
+  border-color: #fd961f;
+}
+.btn-custom4:hover {
+  background-color: #f1b130;
+  border-color: #ffa742;
+}
+.komenbro {
+  position: absolute;
+  margin-top: 10px;
+  left: 200px;
+  top: 1490px;
+}
+
+.card-kontent {
+  position: relative;
+  width: 730px;
+  height: 190px;
+  left: 290px;
+  top: 650px;
+
+  background: whitesmoke;
+  border-radius: 26px;
+}
+.komen-list {
+  list-style: none;
+}
+.card-titles {
+  top: 100px;
+}
+.thanks {
+  margin-top: 900px;
+  margin-bottom: 0px;
+  margin-right: 10px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 70px;
+  line-height: 56px;
+  text-align: center;
+
+  color: #000000;
+}
+.footstyle {
+  margin-top: 800px;
+}
+.btn-customdel {
+  background-color: whitesmoke;
+  border: none;
+  color: black;
+
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+
+  margin-top: 1px;
+  margin-left: 640px;
+}

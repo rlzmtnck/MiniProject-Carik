@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+.navvbar {
+  height: 100px;
+}
+nav {
+  font-family: "Roboto", sans-serif;
+  font-size: 21px;
+  font-weight: 500;
+}
+nav ul {
+  display: inline-table;
+  list-style: none;
+}
+nav ul li a {
+  display: block;
+
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li:hover a {
+  color: #ffffff;
+}
+
+.logoo {
+  left: 1000px;
+}
+.carikbrand {
+  font-size: 64px;
+  color: white;
+}
+.carikpos {
+  font-weight: bold;
+  font-size: 54px;
+  margin-left: 50px;
+  margin-top: 30px;
+}
+.navhome {
+  position: absolute;
+  width: 100%;
+  height: 394px;
+
+  background: #000000;
+}
+.daco {
+  background-image: url(../component/asset/Daco_4879330.png);
+  background-repeat: no-repeat;
+  background-size: 400px;
+  background-position: 50px 0px;
+}
+.tittle {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-weight: medium;
+  font-size: 64px;
+  line-height: 75px;
+  top: 10px;
+  color: #ffffff;
+}
+.tittle1 {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-weight: initial;
+  font-style: inherit;
+  font-size: 28px;
+
+  color: #ffffff;
+}
+.but {
+  background: #ff8800;
+  border-radius: 11px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 42px;
+  text-align: center;
+
+  color: #ffffff;
+  border: 1px solid #000000;
+  position: absolute;
+  width: 200px;
+  height: 56px;
+  left: 678px;
+  bottom: 60px;
+}
+.but:hover {
+  background-color: #d6770b;
+  border-color: #ffa742;
+}
+.konten {
+  margin-top: -10px;
+  margin-left: 21px;
+}
