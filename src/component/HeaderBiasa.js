@@ -2,7 +2,6 @@ import React from "react";
 import "./kepala.css";
 import { Navbar, Nav } from "react-bootstrap";
 
-import "bootstrap/dist/css/bootstrap.min.css";
 const HeaderBiasa = () => {
   return (
     <div>
