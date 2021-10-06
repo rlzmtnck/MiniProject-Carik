@@ -92,7 +92,7 @@ color: #FFFFFF;
     position: absolute;
     width: 200px;
     height: 56px;
-    left: 663px;
+    left: 690px;
     bottom: 60px;
 }
 .but:hover {
@@ -101,4 +101,5 @@ color: #FFFFFF;
 }
 .konten{
     margin-top: -10px;
+    margin-left: 50px;
 }
