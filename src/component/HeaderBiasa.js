@@ -10,7 +10,7 @@ const HeaderBiasa = () => {
         <a
           className="navbar-brand"
           style={{ fontWeight: "bold", marginLeft: "30px", fontSize: "50px" }}
-          href="#"
+          href="/"
         >
           CaRik
         </a>

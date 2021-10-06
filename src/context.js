@@ -3,14 +3,11 @@ import axios from "axios";
 
 export const Context = React.createContext();
 
-
-
 export function ContextController({ children }) {
   let intialState = {
     track_list: [],
-  
-    heading: ""
-    
+
+    heading: "",
   };
 
   const [state, setState] = useState(intialState);
@@ -18,17 +15,17 @@ export function ContextController({ children }) {
   useEffect(() => {
     axios
       .get(
-        `https://corsrulz.herokuapp.com/http://api.musixmatch.com/ws/1.1/chart.tracks.get?page=1&page_size=6&country=us&f_has_lyrics=1&apikey=a11ce73c2a56efb93bdd577a1031df0a`
+        `https://corsrulz.herokuapp.com/http://api.musixmatch.com/ws/1.1/chart.tracks.get?page=1&page_size=6&country=us&f_has_lyrics=1&apikey=d0d08ebbacb4cd5b7e12e465bad4255b`
       )
-      .then(res => {
+      .then((res) => {
         // console.log(res.data);
         setState({
           track_list: res.data.message.body.track_list,
-          
-          heading: "Paling Dicari"
+
+          heading: "Paling Dicari",
         });
       })
-      .catch(err => console.log(err));
+      .catch((err) => console.log(err));
   }, []);
 
   return (

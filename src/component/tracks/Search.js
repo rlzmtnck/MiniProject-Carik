@@ -1,41 +1,38 @@
 import React, { useState, useEffect, useContext } from "react";
 import axios from "axios";
 import { Context } from "../../context";
-import './track.css';
+import "./track.css";
 
 const Search = () => {
-  
   const [state, setState] = useContext(Context);
-  
+
   const [userInput, setUserInput] = useState("");
   const [trackTitle, setTrackTitle] = useState("");
 
   useEffect(() => {
     axios
       .get(
-        `https://corsrulz.herokuapp.com/http://api.musixmatch.com/ws/1.1/track.search?q_track=${trackTitle}&page_size=50&page=1&s_track_rating=desc&apikey=a11ce73c2a56efb93bdd577a1031df0a`
+        `https://corsrulz.herokuapp.com/http://api.musixmatch.com/ws/1.1/track.search?q_track=${trackTitle}&page_size=10&page=1&s_track_rating=desc&apikey=d0d08ebbacb4cd5b7e12e465bad4255b`
       )
-      .then(res => {
+      .then((res) => {
         let track_list = res.data.message.body.track_list;
         setState({ track_list: track_list, heading: "Hasil Pencarian" });
       })
-      .catch(err => console.log(err));
+      .catch((err) => console.log(err));
   }, [trackTitle]);
 
-  const searchTrack = e => {
+  const searchTrack = (e) => {
     e.preventDefault();
     setTrackTitle(userInput);
   };
 
-  const onChange = e => {
+  const onChange = (e) => {
     setUserInput(e.target.value);
   };
-  
+
   return (
     <div className="card card-body mb-4 p-4">
-      <h1 className="display-4 text-center">
-        Search For A Song
-      </h1>
+      <h1 className="display-4 text-center">Search For A Song</h1>
       <p className="lead text-center">Dapatkan lirik dari musik favoritmu</p>
       <form onSubmit={searchTrack}>
         <div className="form-group">

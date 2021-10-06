@@ -12,14 +12,14 @@ const Lyrics = (props) => {
   useEffect(() => {
     axios
       .get(
-        `https://corsrulz.herokuapp.com/http://api.musixmatch.com/ws/1.1/track.lyrics.get?track_id=${props.match.params.id}&apikey=a11ce73c2a56efb93bdd577a1031df0a`
+        `https://corsrulz.herokuapp.com/http://api.musixmatch.com/ws/1.1/track.lyrics.get?track_id=${props.match.params.id}&apikey=d0d08ebbacb4cd5b7e12e465bad4255b`
       )
       .then((res) => {
         let lyrics = res.data.message.body.lyrics;
         setLyrics({ lyrics });
 
         return axios.get(
-          `https://corsrulz.herokuapp.com/http://api.musixmatch.com/ws/1.1/track.get?track_id=${props.match.params.id}&apikey=a11ce73c2a56efb93bdd577a1031df0a`
+          `https://corsrulz.herokuapp.com/http://api.musixmatch.com/ws/1.1/track.get?track_id=${props.match.params.id}&apikey=d0d08ebbacb4cd5b7e12e465bad4255b`
         );
       })
       .then((res) => {

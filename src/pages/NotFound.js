@@ -1,5 +1,5 @@
 import React from "react";
-import "./css/style.css";
+import "./css/notfound.css";
 import Bounce from "react-reveal/Bounce";
 const NotFound = () => (
   <Bounce top>

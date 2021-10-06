@@ -7,8 +7,17 @@
   top: 410px;
 }
 .tittles {
-  margin-right: 158px;
   font-style: normal;
+  font-weight: bolder;
+  font-size: 48px;
+  line-height: 56px;
+  text-align: center;
+
+  color: #000000;
+}
+.tittles1 {
+  font-style: normal;
+  margin-left: 30px;
   font-weight: bolder;
   font-size: 48px;
   line-height: 56px;
@@ -20,7 +29,7 @@
   position: absolute;
   width: 824px;
   height: 557px;
-  left: 280px;
+  left: 256px;
   top: 820px;
 
   background: rgba(255, 136, 0, 0.1);
@@ -33,14 +42,14 @@
   top: 40px;
 }
 .vecbout {
-  background: url(../component/asset/8401.jpg);
+  background: url(../component/asset/girl.jpg);
 
-  background-size: 600px 100%;
+  background-size: 680px 300px;
   background-repeat: no-repeat;
   background-position: 700px 1px;
   margin-left: 80px;
 }
-.btn-custom2 {
+.btn-custom4 {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   color: white !important;
@@ -48,10 +57,10 @@
   margin-top: 8px;
   margin-left: 320px;
   border-radius: 5px;
-  background-color: #ffbb33;
+  background-color: #181818;
   border-color: #fd961f;
 }
-.btn-custom2:hover {
+.btn-custom4:hover {
   background-color: #f1b130;
   border-color: #ffa742;
 }
@@ -66,7 +75,7 @@
   position: relative;
   width: 730px;
   height: 190px;
-  left: 315px;
+  left: 290px;
   top: 650px;
 
   background: whitesmoke;
@@ -81,7 +90,7 @@
 .thanks {
   margin-top: 900px;
   margin-bottom: 0px;
-  margin-right: 158px;
+  margin-right: 10px;
   font-style: normal;
   font-weight: normal;
   font-size: 70px;

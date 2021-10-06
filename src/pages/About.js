@@ -1,3 +1,5 @@
+import React from "react";
+import "../component/style.css";
 import HeaderBiasa from "../component/HeaderBiasa";
 
 const About = () => {
@@ -5,12 +7,12 @@ const About = () => {
     <>
       <HeaderBiasa />
       <div className="vecbout ">
-        <div className="container ">
+        <div className="container-fluid">
           <h1
             style={{
               marginTop: "150px",
               fontWeight: "bold",
-              marginBottom: "20px",
+              marginBottom: "10px",
             }}
           >
             ABOUT CaRik

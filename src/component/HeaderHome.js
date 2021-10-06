@@ -5,7 +5,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 const HeaderHome = () => {
   return (
     <div className="navhome daco container-fluid">
-      <div className="carikbrand carikpos">CaRik</div>
+      <div href="/" className="carikbrand carikpos">
+        CaRik
+      </div>
       <div className="konten">
         <div className="tittle">Cari Lirikmu</div>
         <div className="tittle1">Cari lirik musik favoritmu dan jelajahi</div>

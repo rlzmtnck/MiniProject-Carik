@@ -85,21 +85,19 @@ const Home = () => {
 
     <>
       <HeaderHome />
-      <div className="container-fluid kontens">
-        <div className="tittles">Top</div>
+      <div className="container kontens">
+        <div className="tittles ">Top</div>
         <div className="tittles mb-4">Tracks</div>
 
-        <Slide bottom>
-          <div className="row container mt-3 ml-1">
-            {track_list.map((item) => (
-              <TopTracks key={item.track.track_id} track={item.track} />
-            ))}
-          </div>
-        </Slide>
+        <div className="row container mt-3 ml-1">
+          {track_list.map((item) => (
+            <TopTracks key={item.track.track_id} track={item.track} />
+          ))}
+        </div>
 
-        <div className="tittles mt-5">Review</div>
-        <div className="tittles">Your</div>
-        <div className="tittles">Experience</div>
+        <div className="tittles1 mt-5">Review</div>
+        <div className="tittles1">Your</div>
+        <div className="tittles1">Experience</div>
 
         <Slide bottom>
           <div className="kartu">
@@ -128,7 +126,7 @@ const Home = () => {
                   rows="12"
                 ></textarea>
               </div>
-              <button type="submit" className="btn btn-custom2">
+              <button type="submit" className="btn btn-custom4">
                 POST
               </button>
             </form>
